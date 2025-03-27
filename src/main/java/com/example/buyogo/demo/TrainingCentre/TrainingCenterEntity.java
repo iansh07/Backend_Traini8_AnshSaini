@@ -20,7 +20,7 @@ public class TrainingCenterEntity {
     private Long id;
 
     @NotNull(message = "enter your training centre name")
-    @Size(max = 30, message = "Should not more than 30 characters")
+    @Size(max = 40, message = "Should not more than 40 characters")
     private String trainingCenterName;
 
     @NotNull(message = "Center Code is required")
