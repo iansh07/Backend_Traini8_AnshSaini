@@ -24,7 +24,7 @@ public class TrainingCenterEntity {
     private String trainingCenterName;
 
     @NotNull(message = "Center Code is required")
-    @Pattern(regexp = "^[0-9]{4}$", message = "exactly 4 numeric characters of centre code")
+    @Pattern(regexp = "^[a-zA-Z0-9]{12}$", message = "exactly 12 alphanumeric characters of centre code")
     private String centerCode;
 
     @Embedded
